@@ -65,3 +65,25 @@ TinyML Software:
 1. Applications
 2. Libraries
 3. Operating System: typically embedded systems do not have an OS, but they can have one.
+
+For ML models to work on tiny embedded systems, we need to shrink the model without removing its ability to fundamentally look for patterns in data. To do this we could use model compression techniques, such as __quantization__, __pruning__, and __knowledge distillation__.
+
+__Responsible AI__: AI that is fair, inclusive, transparent, and accountable. AI offers great benefits, but also introduce new risks and ethical challenges, since it could:
+
+- __Change__ current practices
+- __Influence__ human decisions
+- __Regulate__ human behavior
+
+Responsible AI = increased marketability, increased product-adoption, and increased trust. Companies can do well by doing good.
+
+Machine learning takes data and labels, then ouputs rules. This results in a model, which then takes in data and outputs inferences.
+
+Machine learning paradigm:
+
+1. Make a guess
+2. Measure the accuracy
+3. Optimize your guess
+
+Measuring the effectiveness of a guess is known as the __loss function__. The loss function is a measure of how well the model is doing. The goal is to minimize the loss function, which is done by improving the guess.
+
+__Gradient descent__ is an optimization algorithm that is used to minimize the loss function. It is an iterative algorithm that starts with an initial guess, then takes steps in the direction of the negative gradient to minimize the loss function. The gradient is the slope of the loss function, and the negative gradient is the direction of steepest descent. The __learning rate__ is the size of the step taken in the direction of the negative gradient.
