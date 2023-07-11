@@ -89,3 +89,5 @@ Measuring the effectiveness of a guess is known as the __loss function__. The lo
 __Gradient descent__ is an optimization algorithm that is used to minimize the loss function. It is an iterative algorithm that starts with an initial guess, then takes steps in the direction of the negative gradient to minimize the loss function. The gradient is the slope of the loss function, and the negative gradient is the direction of steepest descent. The __learning rate__ is the size of the step taken in the direction of the negative gradient.
 
 A __neuron__ is a mathematical function that takes in a weighted sum of inputs, adds a bias, and then applies an activation function.
+
+Data is usually split into testing, validation, and training sets. The training set is used to train the model, the validation set is used to tune the hyperparameters, and the testing set is used to evaluate the model.
