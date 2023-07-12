@@ -105,6 +105,55 @@ __Inference__ is the process of using a trained model to make predictions on new
 TinyML application Areas:
 
 1. Home
+   - Keyword spotting ("Hey Siri", "Alexa", "OK Google")
 2. Office
+   - Camera sensor to detect occupancy in a room, which controls when lights are on/off
 3. Industry
- 
+   - TinyML will potentially be pervasive in the industrial space, which makes it one of the most important areas for TinyML
+   - Can do predictive maintenance by detecting anomalies in machines
+
+Quote:
+
+    To overcome [some of the] challenges, the following rules of thumb are recommended:
+
+    1 - Collect rich data. In the machine learning world, data is power. A sufficiently large amount of data should be collected to ensure that our TinyML models are able to effectively approximate the distribution of the data. More data never hurts!
+
+    2 - Don’t over-engineer your system. While it may seem attractive to add fifteen sensors to a system, we should follow Occam’s razor when engineering our system that “entities should not be multiplied without necessity”. Being intelligent and yet parsimonious with our sensor selection will minimize the possibility of running into hardware complications.
+
+    3 - Plan to cover all possible sources of variation. The statistical power of our model will always be limited by the data at hand. Consequently, it is helpful to cover as much ground as possible without conflicting with #2. This can involve collecting data that covers edge cases as well as using additional sensors that are expected to provide some additional explanatory power to the model.
+
+    4 - Use the highest workable sampling rate. Although it is highly expensive to transmit and store high-frequency data, we limit these issues when we are using TinyML systems since inferences are made on-device and streamlined to minimize storage. It is much easier to downsample data when there is too much than to upsample it when there is not enough. Thus, when collecting data to use for model training, it is recommended to obtain the highest resolution data possible to provide flexibility in downstream data engineering processes.
+
+![ML Processes](images/3_ML_Processes.png)
+
+AI Infrastructure:
+
+1. Data Engineering
+   - Define data requirements
+   - Collect the data
+   - Label the data
+   - Clean the data
+   - Prepare the data
+   - Augment the data
+   - Add more data
+2. Model Engineering
+   - Train the model
+   - Improve training speed
+   - Set target metrics
+   - Evaluate the model against the target metrics
+3. Model Deployment
+   - Model conversion
+   - Optimize the performance
+   - Energy-aware optimization
+   - Security and privacy
+   - Inference serving APIs
+   - On-device fine-tuning
+4. Product Analytics
+   - Dashboards
+   - Field data evaluation
+   - Value-added for business
+   - Opportunities for advancements and improvements
+
+![ML Life Cycle](images/4_ML_Life_Cycle.png)
+
+We can do model quantization with representative data. This changes the model from an floating point model to an integer model, which reduces the size of the model and the amount of computation required to run the model.
