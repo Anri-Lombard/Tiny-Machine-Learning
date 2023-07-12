@@ -91,3 +91,20 @@ __Gradient descent__ is an optimization algorithm that is used to minimize the l
 A __neuron__ is a mathematical function that takes in a weighted sum of inputs, adds a bias, and then applies an activation function.
 
 Data is usually split into testing, validation, and training sets. The training set is used to train the model, the validation set is used to tune the hyperparameters, and the testing set is used to evaluate the model.
+
+AI is not always the answer. Sometimes traditional programming is better, such as when the problem is well defined and the rules are known. AI is better when the problem is not well defined and the rules are not known (or cannot be specified by domain experts).
+
+![Non Intended Use](images/2_Non_Intended_Use.png)
+
+## Applications of TinyML
+
+Endpoints have many sensors, and they can be used to collect data. This data can be used to train a model, which can then be deployed to the endpoint to make inferences. This is known as __edge computing__.
+
+__Inference__ is the process of using a trained model to make predictions on new data.
+
+TinyML application Areas:
+
+1. Home
+2. Office
+3. Industry
+ 
