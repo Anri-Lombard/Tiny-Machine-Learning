@@ -2,10 +2,6 @@
 
 ## Description
 
-Notes on the HarvardX TinyML course on EdX.
-
-## Approach to this Repository
-
 This repository documents the essential concepts for review and deeper understanding. It is the skelenton of the course, which I find is the most important part to grasp. Some notebooks are included for exploration and experimentation.
 
 ## Structure of Certification
@@ -157,3 +153,13 @@ AI Infrastructure:
 ![ML Life Cycle](images/4_ML_Life_Cycle.png)
 
 We can do model quantization with representative data. This changes the model from an floating point model to an integer model, which reduces the size of the model and the amount of computation required to run the model.
+
+__Quantization__ is an optimization that works by reducing the precision of the numbers used to represent a model's parameters, which by default are 32-bit floating point numbers. This results in a smaller model size, better portability and faster computation.
+
+__Post Training Quantization__: Quantization that is done after the model has been trained.
+
+__Quantization Aware Training__: Quantization that is done during the training process.
+
+![Quantization](images/5_Quantization.png)
+
+One way to reduce precision is to discretize the weights (hash floating point valued weights to integers). Quantization can be done on other parts of the neural network, not just the weights.
