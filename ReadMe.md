@@ -162,4 +162,52 @@ __Quantization Aware Training__: Quantization that is done during the training p
 
 ![Quantization](images/5_Quantization.png)
 
-One way to reduce precision is to discretize the weights (hash floating point valued weights to integers). Quantization can be done on other parts of the neural network, not just the weights.
+One way to reduce precision is to discretize the weights (hash floating point valued weights to integers). Quantization can be done on other parts of the neural network, not just the weights. The benefit of quantization aware training over post training quantization is that it can result in a more accurate model, since it allows the training phase to account for the errors introduced by quantization.
+
+![TF Model Comparison](images/6_TF_Model_Comparison.png)
+
+![TF Software Comparison](images/7_TF_Software_Comparison.png)
+
+![TF Hardware Comparison](images/8_TF_Hardware_Comparison.png)
+
+Keyword spotting is one of the most successful examples of TinyML.
+
+Challenges and constraints in keyword spotting:
+
+1. Latency and Bandwidth
+   - Want to provide results quickly
+   - Need to minimize data sent over the network
+2. Accuracy and Personalization
+   - Need to continuously listen but only trigger on the right keyword
+   - Trigger for the user and not for background noise
+3. Security and Privacy
+   - Safeguarding the data that is being sent to the cloud
+4. Battery and Memory
+   - Limited energy, operate on coin-cell type batteries
+   - Run on resource constrained devices
+
+Datasets are extremely important. If they are done wrong everything else will be a waste of effort.
+
+Data preprocessing:
+
+- Fourier transforms turn time-domain signals into frequency-domain signals
+- Spectograms are a visual representation of the spectrum of frequencies of a signal as it varies with time
+- Mel Fiterbanks are a set of filters that are used to extract features from audio signals
+- Data can also be normalized and denoised
+
+Metrics to evaluate models:
+
+- Accuracy
+  - Type I error: False positive
+  - Type II error: False negative
+  - ![ROC Curve](images/9_ROC_Curve.png)
+- Efficiency
+  - Model must be fast enough to keep up with speech input
+  - The model must run fast enough to be responsive to the end user
+  - It must run efficiently on a small processor
+- Beyond Model Metrics
+  - Memory Usage
+    - Need to be resource aware
+  - Quality of Experience (QoS)
+    - Have diverse users to test against
+    - Test in different backgrounds
