@@ -211,3 +211,41 @@ Metrics to evaluate models:
   - Quality of Experience (QoS)
     - Have diverse users to test against
     - Test in different backgrounds
+
+__Data Engineering__ is the process of collecting, cleaning, and preparing data for use in a machine learning model.
+
+Good data is necessary for accuracy.
+
+- What problem is being solved?
+  - Data must contain useful features
+  - Experts must be able to distinguish between examples of different classes
+  - Performance need to be measured
+- Quality and quantity both matter
+  - Wide distribution of training examples
+  - Accurate labels
+  - Sufficient class balance
+
+Data sources:
+
+- Sensors
+- Crowdsourcing
+- Product users
+- Paid contributors
+
+![Data Engineering](images/10_Data_Engineering.png)
+
+![Datasets](images/11_Datasets.png)
+
+Wide availability of data is important since it is used for comparing models, benchmarking, and improving models (with evaluation).
+
+Relying on the community is a good method for gathering large amounts of data. [Common voice](https://commonvoice.mozilla.org/en) is a good example of this.
+
+Transfer learning allows us to avoid building from scratch. We can use a pre-trained model and then fine tune it for our specific use case.
+
+One potentially impressive application of TinyML would be in VR/AR glasses.
+
+__VWW__: Visual Wake Words. A model that detects whether or not a person is in the field of view of a camera.
+
+Depthwise seperable convolutions are more efficient than regular convolutions, since it requires less multiplications. In fact, this discovery led to the creation of the MobileNet architecture.
+
+__Neural Architecture Search__: A method of finding the best neural network architecture for a given problem.
