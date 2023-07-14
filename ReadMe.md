@@ -275,3 +275,61 @@ Quality Concerns of Synthetic Data:
       Similarly, if only a small amount of real-life data is collected, synthetic data generated using it may exhibit a high degree of bias. This can make it difficult to effectively extrapolate to other environments. Thus, it is still necessary to have access to as large and diverse a dataset as is possible given the contextual constraints to improve the generalizability of our synthetic data. The quality of the generated synthetic data must also be assessed, which can be problematic since the “quality” of a dataset can sometimes be very complex or specific, and not readily described by standard metrics.
 
 __Autoencoders__: A type of neural network that is trained to copy its input to its output. They are used for data compression and denoising. Autoencoders are comprised of an encoder and a decoder. The encoder compresses the input and the decoder reconstructs the input from the compressed representation. We want to minimize the reconstruction error.
+
+3 key features of data protection:
+
+1. Identifiability
+   - ![Identification](images/12_Identification.png)
+2. Data Minimization
+   - Limit data collection and duration of storage to only what is required to fulfill a specific purpose
+   - Right to be forgotten (erasure): subjects have the right to request that their data be erased by the data controller, as soon as possible
+3. Notice and Consent
+   - ![Notice and Consent](images/14_Notice_and_Consent.png)
+
+![Data Classification](images/13_Data_Classification.png)
+
+![Informed Consent](images/15_Informed_Consent.png)
+
+Bias in datasets:
+
+      One of the major challenges of machine learning is the problem of bias. The presence of bias can be the downfall of an otherwise perfect model, resulting in skewed outcomes and low accuracy. This can be a frustrating experience for those who dedicate their time and energy into creating a model, only to discover that it doesn’t work very well. Even more concerning, however, is the possibility that if bias finds a foothold in machine learning, the model may effectively function to automate bias and inequality and deploy it at scale. When all goes well, machine learning can be consistently accurate. But the presence of bias can cause machine learning to be consistently inaccurate in such a way that leads to discriminatory or unfair outcomes.
+
+Avoiding bias:
+
+- Define the Target Variable objectively
+- Label the data correctly (must serve as ground truth)
+- Sample data from a diverse population
+- Avoid measurement distortion
+- Industry solutions:
+  - Datasheets for datasets
+  - Data Nutrition Labels
+  - Bias Testing Toolkits
+
+Unfairness in ML: model exhibits discriminatory biases, perpetuates inequality or performs less well for historically disadvantaged groups.
+
+Protected classes: age, disability, medical history, marital status, sex, race, religion, and national origin.
+
+Discrimination falls into 2 categories:
+
+1. Disparate treatment: intentional discrimination
+2. Disparate impact: unintentional discrimination
+
+Metrics to promote fairness:
+
+1. Group Unawareness: sensitive attributes are not included as features of the dataset
+2. Group Threshold: counteract historical biases in data by adjusting confidence thresholds independently for each group
+3. Demographic Parity: equal probability of positive outcome for each group
+4. Equal Opportunity: equal true positive rate for each group
+5. Equal Accuracy: percentage of correct classifications should be the same for all individuals
+
+__Impossibility theorem__: it is impossible to satisfy all fairness metrics at the same time.
+
+The __Framing Trap__:
+
+1. Algorithmic Frame: does the algorithm provide good accuracy on unseen data?
+2. Data Frame: does the demographic information of the data require optimization of the model?
+3. Sociotechnical Frame: how does the model operate when considered as part of a system of humans and social institutions?
+
+The __Portability Trap__: the model is not portable to other contexts. Repurposing algorithmic solutions may not preserve fair outcomes.
+
+[Google's What If Tool](https://pair-code.github.io/what-if-tool/) could help with solving fairness issues.
