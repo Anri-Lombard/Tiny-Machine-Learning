@@ -4,11 +4,13 @@
 
 This repository documents the essential concepts for review and deeper understanding. It is the skelenton of the course, which I find is the most important part to grasp. Some notebooks are included for exploration and experimentation.
 
+I did not have access to the hardware for course 3, so this repository only covers the first two courses.
+
 ## Structure of Certification
 
 1. Fundamentals of TinyML
 2. Applications of TinyML
-3. Deploying TinyML
+3. Deploying TinyML (Not Included)
 
 ## Fundamentals of TinyML
 
@@ -333,3 +335,7 @@ The __Framing Trap__:
 The __Portability Trap__: the model is not portable to other contexts. Repurposing algorithmic solutions may not preserve fair outcomes.
 
 [Google's What If Tool](https://pair-code.github.io/what-if-tool/) could help with solving fairness issues.
+
+## References
+
+- [Edx TinyML](https://www.edx.org/professional-certificate/harvardx-tiny-machine-learning)
